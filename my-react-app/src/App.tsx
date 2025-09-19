@@ -1,65 +1,107 @@
 import { useState } from 'react'
 import './App.css'
+import "./Navbar.css"
 
 function App() {
 
     return (
         <>
             <div>
-                <h1> Hello </h1>
-                <p> testing test ttsetinstisntinteststs</p>
-                <Name_contact />
-                <hr />
-                <About />
-                <hr />
-                <Skills_experience />
-                <hr />
+                <Navbar />
+                <AboutMe />
+                <Projects />
             </div>
         </>
     )
 }
-
-function Name_contact() {
+function Navbar() {
     return (
-        <>
-            <div>
-                <p style={{ fontWeight: "bold" }}>Alfie Skues</p>
-                <p>Aspiring FAANG Software Engineer</p>
-                <p>gmail@gmail.com 07654321234</p>
+        <nav className='navbar'>
+            <div className='navbar-left'>
+                <p>AWSkues</p>
             </div>
+            <div className='navbar-right'>
+                <ul className='navbar-links'>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li><a href='/project'>Projects</a></li>
+                    <li><a href='/todo'>Todos</a></li>
+                    <li><a href='/connect'>Connect</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    )
+}
+function AboutMe() {
+    return (
+        <>
+            <h1>Alfie Skues</h1>
+            <p>icon United Kingdom</p>
+            <p>I am a 21 year old CS graduate from the University of East Anglia.
+                I specialise in backend development whilst also having experience developing full stack applications (proof in the projects).<br /> Write what you enjoy doing, why you enjoy programming, type of things you made, what do you do in your free time</p>
         </>
     )
 }
-
-
-function About() {
+function Projects() {
     return (
         <>
 
-            <p style={{ fontWeight: "bold" }}> About me </p>
-            <p> Very skilled and high initiative . Seeking an easy and top 1% paying job within the next 2 weeks. <br />
-                I am qualified almost everywhere and have done lots of things throughout my life<br />
-                Highly motivated to utilise all my skills and technologies.
-
-            </p>
-        </>
-    )
-}
-
-function Skills_experience() {
-    return (
-        <>
-            <p style={{ fontWeight: "bold" }}>Skills </p>
-            <ul>
-                <li>Proficient programming (Scratch)</li>
-                <li>Installed Windows</li>
-                <li>Microsoft Office </li>
-                <li>Lots of forms of communication including<br /> talking, writing, typing and more!</li>
+            <p>Could have a see more button at the bottom of the project list that shows all the projects including the side projects so I only have to show a few here</p>
+            <h1>Projects</h1>
+            <ul className='projectList'>
+                <li className='individualProject'>
+                    <h2>Full Stack Fitness App</h2>
+                    <p>Project info</p>
+                    <a href='github.com/Skues/project'>Link</a>
+                </li>
+                <li className='individualProject'>
+                    <h2>AI Train Chatbot</h2>
+                    <p>Project info</p>
+                    <a href='github.com/Skues/project'>Link</a>
+                </li>
+                <li className='individualProject'>
+                    <h2>YourWeather (change name)</h2>
+                    <p>Project info</p>
+                    <a href='github.com/Skues/project'>Link</a>
+                </li>
+                <li className='individualProject'>
+                    <h2>Steam Watch</h2>
+                    <p>Project info</p>
+                    <a href='github.com/Skues/project'>Link</a>
+                </li>
             </ul>
-            <hr />
-            <p style={{ fontWeight: "bold" }}>Experience </p>
-
+            <h4 className='sideProject'>Side Projects</h4>
+            <ul className='sideProjectList'>
+                <li>SSH Remote</li>
+                <li>Router Scraper</li>
+            </ul>
         </>
     )
 }
+function Todos() {
+    return (
+        <>
+            <h1>My todo list:</h1>
+
+            <ul className='todoList'>
+                <li className='todoItem'>Interpreter in Go</li>
+                <li className='todoItem'></li>
+                <li className='todoItem'></li>
+            </ul>
+        </>
+    )
+}
+
+function Connect() {
+    <>
+        <p>Feel free to connect or contact me!</p>
+        <a href='mailto:alfieskues2006@gmail.com'>Email</a>
+        <a href='https://www.github.com/Skues'>GitHub</a>
+        <a href='https://uk.linkedin.com/in/alfie-skues-16240329a'>LinkedIn</a>
+    </>
+}
+
 export default App
