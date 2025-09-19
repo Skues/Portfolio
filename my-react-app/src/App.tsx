@@ -10,6 +10,8 @@ function App() {
                 <Navbar />
                 <AboutMe />
                 <Projects />
+                <Todos />
+                <Connect />
             </div>
         </>
     )
@@ -96,12 +98,15 @@ function Todos() {
 }
 
 function Connect() {
-    <>
-        <p>Feel free to connect or contact me!</p>
-        <a href='mailto:alfieskues2006@gmail.com'>Email</a>
-        <a href='https://www.github.com/Skues'>GitHub</a>
-        <a href='https://uk.linkedin.com/in/alfie-skues-16240329a'>LinkedIn</a>
-    </>
+    return (
+        <>
+            <p>Feel free to connect or contact me!</p>
+            <a href='mailto:alfieskues2006@gmail.com'>Email</a>
+            <a href='https://www.github.com/Skues'>GitHub</a>
+            <a href='https://uk.linkedin.com/in/alfie-skues-16240329a'>LinkedIn</a>
+        </>
+    )
 }
+
 
 export default App
