@@ -42,7 +42,7 @@ function AboutMe() {
         <div className='aboutDiv'>
             <div className='nameSection'>
                 <h1 className='home'>Alfie Skues</h1>
-                <img src='../pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} />
+                <img src='/pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} />
             </div>
             <p>icon United Kingdom</p>
             <p>click to see photo of me and it shows coraline dad</p>
