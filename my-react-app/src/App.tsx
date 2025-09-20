@@ -27,9 +27,9 @@ function Navbar() {
                     <li>
                         <a href='/'>Home</a>
                     </li>
-                    <li><a href='/project'>Projects</a></li>
-                    <li><a href='/todo'>Todos</a></li>
-                    <li><a href='/connect'>Connect</a></li>
+                    <li><a href='#projectAnchor'>Projects</a></li>
+                    <li><a href='#todoAnchor'>Todos</a></li>
+                    <li><a href='#connectAnchor'>Connect</a></li>
                 </ul>
 
             </div>
@@ -40,8 +40,9 @@ function Navbar() {
 function AboutMe() {
     return (
         <>
-            <h1>Alfie Skues</h1>
+            <h1 className='home'>Alfie Skues</h1>
             <p>icon United Kingdom</p>
+            <p> click to see photo of me and it shows coraline dad</p>
             <p>I am a 21 year old CS graduate from the University of East Anglia.
                 I specialise in backend development whilst also having experience developing full stack applications (proof in the projects).<br /> Write what you enjoy doing, why you enjoy programming, type of things you made, what do you do in your free time</p>
         </>
@@ -52,7 +53,7 @@ function Projects() {
         <>
 
             <p>Could have a see more button at the bottom of the project list that shows all the projects including the side projects so I only have to show a few here</p>
-            <h1>Projects</h1>
+            <h1 id='projectAnchor'>Projects</h1>
             <ul className='projectList'>
                 <li className='individualProject'>
                     <h2>Full Stack Fitness App</h2>
@@ -86,7 +87,7 @@ function Projects() {
 function Todos() {
     return (
         <>
-            <h1>My todo list:</h1>
+            <h1 id='todoAnchor'>My todo list:</h1>
 
             <ul className='todoList'>
                 <li className='todoItem'>Interpreter in Go</li>
@@ -100,6 +101,7 @@ function Todos() {
 function Connect() {
     return (
         <>
+            <h2 id='connectAnchor'>Connect</h2>
             <p>Feel free to connect or contact me!</p>
             <a href='mailto:alfieskues2006@gmail.com'>Email</a>
             <a href='https://www.github.com/Skues'>GitHub</a>
