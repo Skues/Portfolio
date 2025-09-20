@@ -6,6 +6,39 @@
     align-items: stretch;
 }
 
+.projectDiv {
+    margin: 10%;
+}
+
+.aboutDiv{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.nameSection{
+    justify-content: space-between;
+    display: flex;
+
+}
+.nameSection > h1, img{
+    margin-right: 5%;
+}
+
+/* @media (max-width: 768px) { /* Adjust breakpoint as needed */ */
+/*   .site-nav ul { */
+/*     display: none; /* Hide the full menu */ */
+/*   } */
+/**/
+/*   .hamburger-button { */
+/*     display: block; /* Show the hamburger button */ */
+/*   } */
+/**/
+/*   /* Styles to show the menu when the 'open' class is added to the nav */ */
+/*   .site-nav.open ul { */
+/*     display: block; /* Show the menu when the button is clicked */ */
+/*   } */
+/* } */
 
 .read-the-docs {
   color: #888;
