@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import "./Navbar.css"
+import { useState } from 'react'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
                 <Projects />
                 <Todos />
                 <Connect />
+                <button onClick={topFunction}>↑</button>
             </div>
         </>
     )
@@ -25,11 +26,11 @@ function Navbar() {
             <div className='navbar-right'>
                 <ul className='navbar-links'>
                     <li>
-                        <a href='/'>Home</a>
+                        <a className='hoverUnderline' href='/'>Home</a>
                     </li>
-                    <li><a href='#projectAnchor'>Projects</a></li>
-                    <li><a href='#todoAnchor'>Todos</a></li>
-                    <li><a href='#connectAnchor'>Connect</a></li>
+                    <li><a className='hoverUnderline' href='#projectAnchor'>Projects</a></li>
+                    <li><a className='hoverUnderline' href='#todoAnchor'>Todos</a></li>
+                    <li><a className='hoverUnderline' href='#connectAnchor'>Connect</a></li>
                 </ul>
 
             </div>
@@ -40,26 +41,32 @@ function Navbar() {
 function AboutMe() {
     return (
         <div className='aboutDiv'>
-            <div className='nameSection'>
-                <h1 className='home'>Alfie Skues</h1>
-                <img src='/pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} />
+            <div className='mainSection'>
+                <div className='nameSection'>
+                    <h1 className='home'>Alfie Skues</h1>
+                    {/* <p>icon United Kingdom</p> */}
+                    <p>I am a 21 year old Computer Science graduate from the University of East Anglia.
+                        I specialise in backend development and have hands-on experience building full stack applications, which you can explore in my projects (link).</p>
+                    {/* <p>add bullet point list of interests</p> */}
+                    {/* <img src='/pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} /> */}
+                </div>
+                <div className='imageHover'></div>
             </div>
-            <p>icon United Kingdom</p>
-            <p>click to see photo of me and it shows coraline dad</p>
-            <p>I am a 21 year old CS graduate from the University of East Anglia.
-                I specialise in backend development whilst also having experience developing full stack applications (proof in the projects).<br /> Write what you enjoy doing, why you enjoy programming, type of things you made, what do you do in your free time</p>
         </div>
     )
 }
 function Projects() {
     return (
         <div className='projectDiv'>
+            {/* <ProjectModal /> */}
+            <p>Write what you enjoy doing, why you enjoy programming, type of things you made, what do you do in your free time</p>
             <p>Could have a see more button at the bottom of the project list that shows all the projects including the side projects so I only have to show a few here</p>
             <h1 id='projectAnchor'>Projects</h1>
+            <p>Here are my some of my projects that I have worked on for the past few months. <a href='/projects'>More projects</a>.</p>
             <ul className='projectList'>
                 <li className='individualProject'>
-                    <h2>Fitness App</h2>
-                    <p>Full stack fitness progression mobile application, which allows users to log workouts, visualise progress and see potential predictions through a custom machine learning model. Built using React Native for compatible front end, created a RESTful Flask API to handle endpoints and data transfer. Python's pandas, scikit-learn and numPy were all used for creating the model and synthetic data (more info on the GitHub README). SQLAlchemy used as NoSQL database.</p>
+                    <h2>Fitness App (change name)</h2>
+                    <p>Full stack fitness progression mobile application, which allows users to log workouts, visualise progress and see potential predictions through a custom machine learning model. Built using React Native for compatible front end, created a RESTful Flask API to handle endpoints and data transfer. Python's pandas, scikit-learn and numPy were all used for creating the model and synthetic data (more info on the GitHub README). SQLAlchemy database.</p>
                     <a href='https://github.com/Skues/FitnessApp' target='_blank'>Link</a>
                 </li>
                 <li className='individualProject'>
@@ -81,31 +88,37 @@ function Projects() {
         </div >
     )
 }
+
 function Todos() {
     return (
-        <>
+        <div className='todoDiv'>
             <h1 id='todoAnchor'>My todo list:</h1>
 
+            <p>Here's what I'm currently working on:</p>
             <ul className='todoList'>
                 <li className='todoItem'>Interpreter in Go</li>
-                <li className='todoItem'></li>
-                <li className='todoItem'></li>
+                <li className='todoItem'>Finish developing Fitness app</li>
+                <li className='todoItem'>J*b</li>
             </ul>
-        </>
+        </div>
     )
 }
 
 function Connect() {
     return (
-        <>
-            <h2 id='connectAnchor'>Connect</h2>
+        <div className='connectDiv'>
+            <h1 id='connectAnchor'>Connect</h1>
             <p>Feel free to connect or contact me!</p>
             <a href='mailto:alfieskues2006@gmail.com'>Email</a>
             <a href='https://github.com/Skues'>GitHub</a>
             <a href='https://uk.linkedin.com/in/alfie-skues-16240329a'>LinkedIn</a>
-        </>
+        </div>
     )
 }
 
+function topFunction() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0;
+}
 
 export default App
