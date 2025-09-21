@@ -53,7 +53,8 @@
     border-radius: 50%;
 }
 
-.imageHover:hover {
+.imageHover:hover,
+.imageHover:active {
     background-image: url("/pictures/coraline-dad-type.gif");
 }
 
