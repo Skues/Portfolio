@@ -46,10 +46,10 @@ function AboutMe() {
                     <h1 className='home'>Alfie Skues</h1>
                     {/* <p>icon United Kingdom</p> */}
                     <p>I am a 21 year old Computer Science graduate from the University of East Anglia.
-                        I specialise in backend development and have hands-on experience building full stack applications, which you can explore in my projects (link).</p>
+                        I specialise in backend development and have hands-on experience building full stack applications, which you can explore in my projects.</p>
                     {/* <p>add bullet point list of interests</p> */}
                     {/* <img src='/pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} /> */}
-                    <p>I enjoy solving my own problems with code and constantly learning new tools, languages and techniques. Outside of programming, I am a bodybuilder and ex top 100 Brawlhalla player.</p>
+                    <p>I enjoy solving my own problems with code and constantly learning new tools, languages and techniques. Outside of programming, I go to the gym and play video games (ex top 100 Brawlhalla).</p>
                 </div>
                 <div className='imageHover'></div>
                 {/* // Credit to my beautiful girlfriend for drawing this */}
@@ -68,10 +68,10 @@ function ProjectsPreview() {
                     <h2>Fitness App (change name)</h2>
                     <p>Full stack mobile fitness progression to track workouts, visualise progress, and predict future performance using machine learning.</ p>
                     <ul>
-                        <li>Built using React Native for compatible front end</li>
-                        <li>Developed a RESTful API using Flask to handle endpoints and data transfer.</ li>
-                        <li>Python's pandas, scikit-learn and numPy were all used for creating the model and synthetic data (more info on the GitHub README)</li>
-                        <li>SQLAlchemy database.</li>
+                        <li>Built using <b>React</b> <b>Native</b> for compatible front end</li>
+                        <li>Developed a <b>RESTful</b> API using <b>Flask</b> to handle endpoints and data transfer.</ li>
+                        <li><b>Python's pandas</b>, <b>scikit-learn</b> and <b>numPy</b> were all used for creating the model and synthetic data (more info on the GitHub README)</li>
+                        <li><b>SQLAlchemy</b> database.</li>
                     </ul>
                     <br />
                     <a className="linkButton" href='https://github.com/Skues/FitnessApp' target='_blank'>Link</a>
@@ -85,8 +85,7 @@ function ProjectsPreview() {
                         <li>Backend built using <b>Python Flask</b>.</li>
                         <li>Frontend developed with <b>HTML</ b> and <b>CSS</ b>.</li>
                         <li>Integrated with a <b>MySQL</b > database to store and retrieve user preferences.</li>
-                        <li>Hosted on <b>Docker</b> .</li>
-
+                        <li>Hosted on <b>Docker</b>.</li>
                     </ul>
                     <br />
                     <a className="linkButton" href='https://github.com/Skues/YourWeather' target='_blank'>Link</a>
@@ -99,10 +98,10 @@ function ProjectsPreview() {
                             <li>Help customers find the cheapest available ticket for their journey.</li>
                             <li>Estimating delays using a machine learning model trained on 3 years of historical data.</li>
                         </ul>
-                        <li>Developed both frontend and backend with Python.</li>
-                        <li>Used spaCy for NLP with a custom spaCy model to recognise train stations.</li>
-                        <li>Selenium was used to scrape real-time train station data.</li>
-                        <li>Built and trained the delay prediction model using Pandas and scikit-learn.</li>
+                        <li>Developed both frontend and backend with <b>Python</b>.</li>
+                        <li>Used <b>spaCy</b> for <b>NLP</b> with a custom spaCy model to recognise train stations.</li>
+                        <li><b>Selenium</b> was used to scrape real-time train station data.</li>
+                        <li>Built and trained the delay prediction model using <b>Pandas</b> and <b>scikit-learn</b>.</li>
                         <li>Planned and led the project to a high standard.</li>
                     </ul>
                     <br />
@@ -112,13 +111,13 @@ function ProjectsPreview() {
                     <h2>Steam Watch</h2>
                     <p>For fun backend project used to track my friends playtime on Steam and to, eventually, visually rank it on most time wasted.</p>
                     <ul>
-                        <li>Gathers friend list data based on a SteamID</li>
+                        <li>Gathers friend list data using a SteamID.</li>
                         <li>Identifies most played games:</li>
                         <ul><li>Within the last 2 weeks</li>
                             <li>Overall</li>
                         </ul>
-                        <li>Ranked on the most time played and displays which games were played</li>
-                        <li>Build in Go using SteamAPI</li>
+                        <li>Ranked on the most time played and displays the top games.</li>
+                        <li>Build in Go using SteamAPI.</li>
                     </ul>
                     <br />
                     <a className="linkButton" href='https://github.com/Skues/steam-watch' target='_blank'>Link</a>
@@ -133,7 +132,7 @@ function ProjectsPreview() {
 function Todos() {
     return (
         <div id='todoDiv' className='todoDiv'>
-            <h1 id='todoAnchor'>My todo list:</h1>
+            <h1 id='todoAnchor'>My to do list:</h1>
 
             <p>Here's what I'm currently working on:</p>
             <ul className='todoList'>
