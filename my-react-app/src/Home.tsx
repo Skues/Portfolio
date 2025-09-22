@@ -49,6 +49,8 @@ function AboutMe() {
                         I specialise in backend development and have hands-on experience building full stack applications, which you can explore in my projects (link).</p>
                     {/* <p>add bullet point list of interests</p> */}
                     {/* <img src='/pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} /> */}
+                    <p>I enjoy solving my own problems with code and constantly learning new tools, languages and techniques. Outside of programming, I am a bodybuilder and ex top 100 Brawlhalla player.</p>
+                    <p>Write what you enjoy doing, why you enjoy programming, type of things you made, what do you do in your free time</p>
                 </div>
                 <div className='imageHover'></div>
                 {/* // Credit to my beautiful girlfriend for drawing this */}
@@ -60,10 +62,8 @@ function ProjectsPreview() {
     return (
         <div className='projectDiv'>
             {/* <ProjectModal /> */}
-            <p>Write what you enjoy doing, why you enjoy programming, type of things you made, what do you do in your free time</p>
-            <p>Could have a see more button at the bottom of the project list that shows all the projects including the side projects so I only have to show a few here</p>
             <h1 id='projectAnchor'>Projects</h1>
-            <p>Here are my some of my projects that I have worked on for the past few months. <a href='/projects'>More projects</a>.</p><a href='/projects'>More Projects</a>
+            <p>Here are my some of my projects that I have worked on for the past few months. </p>
             <ul className='projectList'>
                 <li className='individualProject'>
                     <h2>Fitness App (change name)</h2>
@@ -86,13 +86,15 @@ function ProjectsPreview() {
                     <a href='https://github.com/Skues/steam-watch' target='_blank'>Link</a>
                 </li>
             </ul>
+
+            <a href='/projects' >More Projects</a>
         </div >
     )
 }
 
 function Todos() {
     return (
-        <div className='todoDiv'>
+        <div id='todoDiv' className='todoDiv'>
             <h1 id='todoAnchor'>My todo list:</h1>
 
             <p>Here's what I'm currently working on:</p>

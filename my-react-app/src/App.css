@@ -1,24 +1,43 @@
 #root {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     align-items: stretch;
 }
 
 .connectDiv {
-    margin: 10%;
+
+    background-color: #2b2b2b;
+    border: solid;
+    max-width: 1000px;
+    padding: 50px;
 }
 
 .todoDiv {
-    margin: 10%;
+    background-color: #2b2b2b;
+    border: solid;
+    max-width: 1000px;
+    padding: 50px;
 }
 
 .projectDiv {
-    margin: 10%;
+    background-color: #2b2b2b;
+    border: solid;
+    max-width: 1000px;
+    padding: 50px;
 }
 
 .projectDiv>ul {
     list-style-type: none;
+}
+
+.aboutDiv,
+.projectDiv,
+.todoDiv,
+.connectDiv {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    margin: 50px auto;
 }
 
 .hoverUnderline {
@@ -34,9 +53,17 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #797edb;
+    background-color: #a2a7f5;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+}
+
+.projectList .individualProject {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #3b3737;
+    border-radius: 8px;
+    border-left: 4px solid #797edb;
 }
 
 .hoverUnderline:hover::after {
@@ -59,12 +86,14 @@
 }
 
 .aboutDiv {
+    background-color: #2b2b2b;
+    margin-inline: auto;
     padding: 50px;
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-top: 3%; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
     max-width: 1000px;
-    border: solid;
+
 }
 
 .mainSection {

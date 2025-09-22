@@ -1,22 +1,25 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    margin: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
 }
 
 .navbar-right .navbar-links {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-right .navbar-links li {
-  margin-right: 1rem;
+    margin-right: 1rem;
 }
 
 .navbar-right .navbar-links a {
-  text-decoration: none;
+    text-decoration: none;
 }
