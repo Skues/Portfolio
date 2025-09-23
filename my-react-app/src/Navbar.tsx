@@ -11,7 +11,7 @@ function Navbar() {
                         <a className='hoverUnderline' href='/'>Home</a>
                     </li>
                     <li><a className='hoverUnderline' href='#projectAnchor'>Projects</a></li>
-                    <li><a className='hoverUnderline' href='#todoDiv'>Todos</a></li>
+                    <li><a className='hoverUnderline' href='#todoDiv'>WIP</a></li>
                     <li><a className='hoverUnderline' href='#connectAnchor'>Connect</a></li>
                 </ul>
 

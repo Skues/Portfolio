@@ -181,7 +181,7 @@ function ProjectsPreview() {
 function Todos() {
     return (
         <div id='todoDiv' className='todoDiv'>
-            <h1 id='todoAnchor'>What I'm Currently Working On</h1>
+            <h1 id='todoAnchor'>Work In Progress</h1>
 
             <ul className='todoList'>
                 <li className='todoItem'>Building an Interpreter in Go for the Lox programming language</li>
