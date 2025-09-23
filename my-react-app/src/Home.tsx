@@ -12,7 +12,7 @@ function Home() {
                 <ProjectsPreview />
                 <Todos />
                 <Connect />
-                <button onClick={topFunction}>↑</button>
+                <button className="topButton" onClick={topFunction}>↑</button>
             </div>
         </>
     )
@@ -121,7 +121,10 @@ function ProjectsPreview() {
                 </li>
             </ul>
 
-            <a href='/projects' >More Projects</a>
+            <a className="moreProjectsBtn" href='/projects' >
+                <span>View All Projects</span>
+                <img src="/pictures/folder.png" className='folderIcon'></img>
+            </a>
         </div >
     )
 }
