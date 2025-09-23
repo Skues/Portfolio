@@ -1,7 +1,7 @@
 import './App.css'
 import "./Navbar.css"
 import Navbar from './Navbar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Home() {
 
@@ -9,6 +9,7 @@ function Home() {
         <>
             <div>
                 <Navbar />
+                <ScrollTracker />
                 <AboutMe />
                 <ProjectsPreview />
                 <Todos />
@@ -41,7 +42,7 @@ function Home() {
 // }
 function AboutMe() {
     return (
-        <div className='aboutDiv'>
+        <div className='aboutDiv' id='aboutAnchor'>
             <div className='mainSection'>
                 <div className='nameSection'>
                     <h1 className='home'>Alfie Skues</h1>
@@ -213,6 +214,49 @@ function Connect() {
 function topFunction() {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0;
+}
+
+function ScrollTracker() {
+    const [activeSection, setActiveSection] = useState("aboutAnchor")
+    const sections = ["aboutAnchor", "projectAnchor", "todoAnchor", "connectAnchor"]
+    useEffect(() => {
+        const handleScroll = () => {
+            for (let id of sections) {
+                const el = document.getElementById(id);
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        setActiveSection(id);
+                        break;
+                    }
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToSection = (id: string) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    return (
+        <div className="scrollTracker">
+            {sections.map(id => (
+                <div
+                    key={id}
+                    className={`scrollCheckpoint ${activeSection === id ? 'active' : ''}`}
+                    onClick={() => scrollToSection(id)}
+                />
+            ))}
+        </div>
+    );
 }
 
 export default Home
