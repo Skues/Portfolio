@@ -18,23 +18,6 @@ function Projects() {
                 <li>
                     <section>Steam Watch</section><p>Description</p><a href="https://github.com/Skues/link">Link</a>
                 </li>
-                <li>
-                    <section>Router Scraper</section><p>Description</p><a href="https://github.com/Skues/link">Link</a>
-                </li>
-                <li>
-                    <section>Blackjack Simulation</section><p>Description</p><a href="https://github.com/Skues/link">Link</a>
-                </li>
-                <li>
-                    <section>Ashen Stealth Game</section><p>Description</p><a href="https://github.com/Skues/link">Link</a>
-                </li>
-                <li>
-                    <section>SSH Remote</section><p>Description</p><a href="https://github.com/Skues/link">Link</a>
-
-                </li>
-                <li>
-                    <section>.config</section><p>Description</p><a href="https://github.com/Skues/link">Link</a>
-
-                </li>
             </ul>
         </>
     )

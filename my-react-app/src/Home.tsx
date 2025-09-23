@@ -1,6 +1,7 @@
 import './App.css'
 import "./Navbar.css"
 import Navbar from './Navbar';
+import { useState } from 'react';
 
 function Home() {
 
@@ -55,6 +56,7 @@ function AboutMe() {
     )
 }
 function ProjectsPreview() {
+    let [viewMore, setViewMore] = useState(false);
     return (
         <div className='projectDiv'>
             {/* <ProjectModal /> */}
@@ -121,12 +123,51 @@ function ProjectsPreview() {
                 </li>
             </ul>
 
-            <a className="moreProjectsBtn" href='/projects' >
-                <span>View All Projects</span>
+            <button onClick={viewMoreProjects} className='moreProjectsBtn'>
+                <span>{viewMore ? "View Less Projects" : "View More Projects"}</span>
                 <img src="/pictures/folder.png" className='folderIcon'></img>
-            </a>
+            </button>
+
+            {viewMore && (
+                <ExtraProjects />
+            )}
         </div >
     )
+    function viewMoreProjects() {
+        setViewMore(!viewMore)
+    }
+    function ExtraProjects() {
+        return (
+            <>
+                <ul className='extraProjects'>
+                    <li>
+                        <h3>Router Scraper</h3><p>Cross-platform CLI Tool that gathers information about a network including default IP and network frequencies. </p>
+                        <p>Technologies used: Python, ctypes</p> <a href="https://github.com/Skues/link">Link</a>
+                    </li>
+                    <li>
+                        <h3>Blackjack Simulation</h3><p>Simulation project with the goal of finding the best gameplay, card counting, and betting strategy. Wrote a 40 page report on the design, execution and evaluation of the project.</p>
+                        <p>Technologies used: Python, Matplotlib, numPy, LaTeX </p><a href="https://github.com/Skues/link">Link</a>
+                    </li>
+                    <li>
+                        <h3>Ashen</h3><p>Stealth game made in Unity focused on AI senses locating the player and pathfinding towards them.</p><a href="https://github.com/Skues/link">Link</a>
+                    </li>
+                    <li>
+                        <h3>SSH Remote</h3><p>Python program that uses SSH to control a system and become a remote control.</p><a href="https://github.com/Skues/link">Link</a>
+
+                    </li>
+                    <li>
+                        <h3>Portfolio website</h3><p>Python program that uses SSH to control a system and become a remote control.</p><a href="https://github.com/Skues/link">Link</a>
+
+                    </li>
+                    <li>
+                        <h3>.config</h3><p>Personal Linux files constantly updated.</p><a href="https://github.com/Skues/link">Link</a>
+
+                    </li>
+
+                </ul>
+            </>
+        )
+    }
 }
 
 function Todos() {
