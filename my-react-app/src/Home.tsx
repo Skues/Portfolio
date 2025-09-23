@@ -146,7 +146,7 @@ function ProjectsPreview() {
                         <p>Technologies used: Python, ctypes</p> <a href="https://github.com/Skues/RouterScraper">Link</a>
                     </li>
                     <li>
-                        <h3>Blackjack Simulation</h3><p>Simulation project with the goal of finding the best gameplay, card counting, and betting strategy. Wrote a 40 page report on the design, execution and evaluation of the project.</p>
+                        <h3>Blackjack Simulation</h3><p>Simulation project with the goal of finding the best gameplay, card counting, and betting strategy within 10000 games of Blackjack. Wrote a 40 page report on the design, execution and evaluation of the project.</p>
                         <p>Technologies used: Python, Matplotlib, numPy, LaTeX </p><a href="https://github.com/Skues/Blackjack-Project">Link</a>
                     </li>
                     <li>
@@ -161,17 +161,18 @@ function ProjectsPreview() {
 
                     </li>
                     <li>
-                        <h3>Portfolio website</h3><p>Python program that uses SSH to control a system and become a remote control.</p>
+                        <h3>Portfolio website</h3><p>I built my portfolio website using React, Typescript and CSS. This website is currently a work in progress and is constantly being improved.</p>
                         <p>Technologies used: React, CSS, Typescript</p>
                         <a href="https://github.com/Skues/Portfolio">Link</a>
 
                     </li>
-                    <li>
-                        <h3>.config</h3><p>Personal Linux files constantly updated.</p>
-                        <p>Technologies used: Arch, btw</p>
-                        <a href="https://github.com/Skues/.config">Link</a>
-
-                    </li>
+                    {/* <li> */}
+                    {/*     <h3>.config</h3><p>Personal Linux files.</p> */}
+                    {/*     <p>Technologies used: Arch, btw</p> */}
+                    {/*     <a href="https://github.com/Skues/.config">Link</a> */}
+                    {/**/}
+                    {/* </li> */}
+                    <p>(some links may not work as they are currently private repos)</p>
 
                 </ul>
             </>
