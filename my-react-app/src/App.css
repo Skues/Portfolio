@@ -135,7 +135,7 @@ button:focus-visible {
 .imageHover {
     width: 300px;
     height: 300px;
-    background-image: url("/pictures/Icon.png");
+    background-image: url("/pictures/Icon.jpg");
     background-size: cover;
     /* transition: background-image 0.5s ease-in-out; */
     border-radius: 50%;

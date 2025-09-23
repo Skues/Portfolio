@@ -45,10 +45,7 @@ function AboutMe() {
                 <div className='nameSection'>
                     <h1 className='home'>Alfie Skues</h1>
                     {/* <p>icon United Kingdom</p> */}
-                    <p>I am a 21 year old Computer Science graduate from the University of East Anglia.
-                        I specialise in backend development and have hands-on experience building full stack applications, which you can explore in my projects.</p>
-                    {/* <p>add bullet point list of interests</p> */}
-                    {/* <img src='/pictures/coraline-dad-type.gif' alt='meIRL' width={100} height={100} /> */}
+                    <p>I'm a full-stack developer specialising in building backend systems. As a recent First Class Computer Science graduate from the University of East Anglia, I have hands-on experience building high quality applications from the ground up.</p>
                     <p>I enjoy solving my own problems with code and constantly learning new tools, languages and techniques. Outside of programming, I go to the gym and play video games (ex top 100 Brawlhalla).</p>
                 </div>
                 <div className='imageHover'></div>
@@ -65,7 +62,7 @@ function ProjectsPreview() {
             <p>Here are my some of my projects that I have worked on for the past few months. </p>
             <ul className='projectList'>
                 <li className='individualProject'>
-                    <h2>Fitness App (change name)</h2>
+                    <h2>Progressive</h2>
                     <p>Full stack mobile fitness progression to track workouts, visualise progress, and predict future performance using machine learning.</ p>
                     <ul>
                         <li>Built using <b>React</b> <b>Native</b> for compatible front end</li>
@@ -74,10 +71,10 @@ function ProjectsPreview() {
                         <li><b>SQLAlchemy</b> database.</li>
                     </ul>
                     <br />
-                    <a className="linkButton" href='https://github.com/Skues/FitnessApp' target='_blank'>Link</a>
+                    <a className="linkButton" href='https://github.com/Skues/Progressive' target='_blank'>View on GitHub</a>
                 </li>
                 <li className='individualProject'>
-                    <h2>YourWeather (change name)</h2>
+                    <h2>YourWeather</h2>
                     <p>Web application that uses real-time weather data to provide advice targetted at getting better sleep, based on user preferences. </p>
                     <ul>
                         <li>Retrieves detailed weather data from a public API.</li>
@@ -88,7 +85,7 @@ function ProjectsPreview() {
                         <li>Hosted on <b>Docker</b>.</li>
                     </ul>
                     <br />
-                    <a className="linkButton" href='https://github.com/Skues/YourWeather' target='_blank'>Link</a>
+                    <a className="linkButton" href='https://github.com/Skues/YourWeather' target='_blank'>View on GitHub</a>
                 </li>
                 <li className='individualProject'>
                     <h2>AI Train Chatbot</h2>
@@ -105,7 +102,7 @@ function ProjectsPreview() {
                         <li>Planned and led the project to a high standard.</li>
                     </ul>
                     <br />
-                    <a className="linkButton" href='https://github.com/Skues/AI-Train-Chatbot' target='_blank'>Link</a>
+                    <a className="linkButton" href='https://github.com/Skues/AI-Train-Chatbot' target='_blank'>View on GitHub</a>
                 </li>
                 <li className='individualProject'>
                     <h2>Steam Watch</h2>
@@ -120,7 +117,7 @@ function ProjectsPreview() {
                         <li>Build in Go using SteamAPI.</li>
                     </ul>
                     <br />
-                    <a className="linkButton" href='https://github.com/Skues/steam-watch' target='_blank'>Link</a>
+                    <a className="linkButton" href='https://github.com/Skues/steam-watch' target='_blank'>View on GitHub</a>
                 </li>
             </ul>
 
@@ -132,12 +129,11 @@ function ProjectsPreview() {
 function Todos() {
     return (
         <div id='todoDiv' className='todoDiv'>
-            <h1 id='todoAnchor'>My to do list:</h1>
+            <h1 id='todoAnchor'>What I'm Currently Working On</h1>
 
-            <p>Here's what I'm currently working on:</p>
             <ul className='todoList'>
-                <li className='todoItem'>Interpreter in Go</li>
-                <li className='todoItem'>Finish developing Fitness app</li>
+                <li className='todoItem'>Building an Interpreter in Go for the Lox programming language</li>
+                <li className='todoItem'>Refining and adding more features to Progressive</li>
                 <li className='todoItem'>J*b</li>
             </ul>
         </div>
