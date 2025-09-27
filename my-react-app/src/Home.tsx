@@ -143,27 +143,27 @@ function ProjectsPreview() {
                 <ul className='extraProjects'>
                     <li>
                         <h3>Router Scraper</h3><p>Cross-platform CLI Tool that gathers information about a network including default IP and network frequencies. </p>
-                        <p>Technologies used: Python, ctypes</p> <a href="https://github.com/Skues/RouterScraper">Link</a>
+                        <p>Technologies used: Python, ctypes</p> <a href="https://github.com/Skues/RouterScraper" target='_blank'>Link</a>
                     </li>
                     <li>
                         <h3>Blackjack Simulation</h3><p>Simulation project with the goal of finding the best gameplay, card counting, and betting strategy within 10000 games of Blackjack. Wrote a 40 page report on the design, execution and evaluation of the project.</p>
-                        <p>Technologies used: Python, Matplotlib, numPy, LaTeX </p><a href="https://github.com/Skues/Blackjack-Project">Link</a>
+                        <p>Technologies used: Python, Matplotlib, numPy, LaTeX </p><a href="https://github.com/Skues/Blackjack-Project" target='_blank'>Link</a>
                     </li>
                     <li>
                         <h3>Ashen</h3><p>Stealth game made in Unity focused on AI senses locating the player and pathfinding towards them.</p>
                         <p>Technologies used: C#, Unity</p>
-                        <a href="https://github.com/Skues/Ashen-Stealth-Game">Link</a>
+                        <a href="https://github.com/Skues/Ashen-Stealth-Game" target='_blank'>Link</a>
                     </li>
                     <li>
                         <h3>SSH Remote</h3><p>Python program that uses SSH to control a system and become a remote control.</p>
                         <p>Technologies used: Python, SSH, wtype</p>
-                        <a href="https://github.com/Skues/ssh-remote">Link</a>
+                        <a href="https://github.com/Skues/ssh-remote" target='_blank'>Link</a>
 
                     </li>
                     <li>
                         <h3>Portfolio website</h3><p>I built my portfolio website using React, Typescript and CSS. This website is currently a work in progress and is constantly being improved.</p>
                         <p>Technologies used: React, CSS, Typescript</p>
-                        <a href="https://github.com/Skues/Portfolio">Link</a>
+                        <a href="https://github.com/Skues/Portfolio" target='_blank'>Link</a>
 
                     </li>
                     {/* <li> */}
