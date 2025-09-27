@@ -292,6 +292,15 @@ button:focus-visible {
     }
 }
 
+.footer {
+    padding: 2px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+
+    background-color: #2b2b2b;
+}
+
 /* .nameSection>h1, */
 /* img { */
 /*     margin-right: 5%; */

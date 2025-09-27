@@ -15,6 +15,7 @@ function Home() {
                 <Todos />
                 <Connect />
                 <button className="topButton" onClick={topFunction}>↑</button>
+                <Footer />
             </div>
         </>
     )
@@ -78,7 +79,7 @@ function ProjectsPreview() {
                 </li>
                 <li className='individualProject'>
                     <h2>YourWeather</h2>
-                    <p>Web application that uses real-time weather data to provide advice targetted at getting better sleep, based on user preferences. </p>
+                    <p>Web application that uses real-time weather data to provide advice targeted at getting better sleep, based on user preferences. </p>
                     <ul>
                         <li>Retrieves detailed weather data from a public API.</li>
                         <li>Analyses conditions during the user's sleep hours and provides advice.</li>
@@ -258,6 +259,16 @@ function ScrollTracker() {
             ))}
         </div>
     );
+}
+function Footer() {
+    return (
+        <>
+
+            <footer className='footer'>
+                <p>Made exclusively by Alfie Skues. Last Updated: 27/09/2025</p>
+            </footer>
+        </>
+    )
 }
 
 export default Home
